@@ -1,0 +1,451 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,400bold,400italic);
+@import url(reset.css);
+
+body {
+	font: normal 100% 'Open Sans', Arial, sans-serif;
+	margin: 0 auto;
+    background-color: #f6f6f6;	
+}
+
+a, a:visited {
+	color: rgba(0, 83, 155, 1.0);
+}
+
+a:hover {
+	color: rgba(139, 39, 41, 1);
+}
+
+strong {
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+#clear {
+	clear: both;
+}
+
+header {
+    margin-top: 5%;
+    padding: 2% 3%;
+    background-color: #fff;
+}
+
+header #site-title {
+	float: left;
+	width: 60%;
+	letter-spacing: 0.025em;
+}
+
+header #search {
+	float: left;
+	width: 34%;
+	padding: 3% 1% 1%;
+}
+
+header #search input[type=text], header #search input[type=submit] {
+	float: left;
+}
+
+#block-islandora-solr-simple input[type=text] {
+	width: 71%;
+	font: normal 100% 'Open Sans', Arial, sans-serif;
+}
+
+#block-islandora-solr-simple input[type=submit] {
+	width: 26%;
+	padding:8px 5px;
+	background:#f6f6f6; 
+	border:0 none;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#islandora-solr-result-count {
+	clear: both;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#site-title h1 {
+    text-transform: uppercase;
+	font-size: 1.6em;
+	font-weight: normal;
+    margin-bottom: 0;
+}
+
+#site-title a {
+	text-decoration: none;
+    color: #000;    	
+}
+
+#site-title h2 {
+    text-transform: uppercase;
+	font-size: 1.1em;
+	letter-spacing: 0.025em;	
+	font-weight: bold;
+	margin-top: 0;
+}
+
+#site-title h2 i {
+	font-family: Gentium Book Basic, Garamond, serif;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: none;
+}
+
+@media screen and (max-width: 775px) { /* First break point */
+
+#site-title h1 {
+	font-size: 1.2em;
+}
+
+#site-title h2 {
+	font-size: 0.8em;
+}
+
+header #site-title {
+	width: 60%;
+}
+
+header #search {
+	width: 36%;
+}
+
+#block-islandora-solr-simple input[type=text] {
+	width: 65%;
+	font: normal 75% 'Open Sans', Arial, sans-serif;
+}
+
+#block-islandora-solr-simple input[type=submit] {
+	width: 30%;
+	padding:5px 5px;
+}
+
+}
+
+@media screen and (max-width: 555px) { /* Second break point */
+
+header #site-title, header #search {
+	width: 100%;
+	float: none;
+}
+
+#banner {
+	display: none;
+}
+
+#block-islandora-solr-simple input[type=text] {
+	max-width: 45%;
+	font: normal 75% 'Open Sans', Arial, sans-serif;
+}
+
+#block-islandora-solr-simple input[type=submit] {
+	width: 20%;
+	padding:5px 5px;
+}
+
+}
+
+nav {
+	margin: 0;
+}
+
+nav #navigation {
+	background-color: rgba(139, 39, 41, 1);
+}
+
+nav #collections {
+	background-color: rgba(59, 13, 17, 1);
+}
+
+nav h2 {
+	display: none;
+}
+
+nav .content {
+	margin: 0;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav #navigation ul {
+	padding: 0 0; /* reset the indent */
+}
+
+nav #collections ul {	
+	padding: 0 0 0.05%; /* reset the indent */
+}
+
+nav li {
+	display: inline;
+	font-size: 0.9em;
+}
+
+nav #navigation li a, nav #collections li a, nav li a:hover {
+	color: #fff;
+}
+
+nav li a, nav li a.active {
+	display: inline-block;
+	text-decoration: none;
+	padding: 1.5% 1.25%;
+}
+
+nav li a.active {
+	font-weight: bold;
+	color: #fff;
+}
+
+nav a:hover {
+	background-color: #000;
+}
+
+@media screen and (max-width: 775px) { /* First break point */
+
+nav li {
+	display: inline;
+	font-size: 0.8em;
+}
+
+}
+
+@media screen and (max-width: 555px) { /* Second break point */
+
+nav #collections h2 {
+	text-align: center;
+	display: block;
+	font-size: 0.8em;
+	color:  #fff;
+	padding: 1.5% 1.25%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav li a, nav li a.active {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 1.5% 1.25%;
+}
+
+}
+
+#banner {
+	background-color: #fff;
+	margin: 0;
+}
+
+#banner-image {
+	margin: 0;
+	padding: 0;
+}
+
+#banner-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+#banner-caption p {
+	font-size: 0.7em;
+	text-align: center;
+	margin: 0;
+	padding: 0 0 2.5%;	
+}
+
+main {
+	background-color: #fff;
+	border-top: 1.25pt solid #f6f6f6;
+	padding: 1% 4% 1.5%;
+}
+
+main h3, aside h3 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 1.9% 0;
+}
+
+main p:first-child {
+	padding: 1.9% 0;
+}
+
+main p {
+	padding: 0 0 1.9%;
+}
+
+main h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+main .islandora-basic-collection-display-switch {
+	font-size: 0.8em;
+}
+
+main .islandora-basic-collection-display-switch li a.islandora-view-list.active, main .islandora-basic-collection-display-switch li a.islandora-view-grid.active {
+	color: rgba(0, 83, 155, 1.0);
+	font-weight: bold;
+}
+
+main .islandora-basic-collection-display-switch li a.islandora-view-list:hover, main .islandora-basic-collection-display-switch li a.islandora-view-grid:hover {
+	color: rgba(139, 39, 41, 1);
+}
+
+main #pdf {
+	background-color: #f6f6f6;
+	margin-bottom: 0;
+}
+
+main #download {
+	margin-top: 0;
+	background-color: #f6f6f6;
+}
+
+main #download ul {
+	list-style-type: none;
+	padding: 0; /* reset the indent */
+	margin: 0;
+}
+
+main #download li a {
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	padding: 1.5% 1.25%;
+}
+
+main #download a:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+main #metadata {
+	background-color: #fff;
+}
+
+main #metadata .title {
+	font-weight: bold;
+}
+
+main #metadata p {
+	padding: 0 0 1.9%;
+}
+
+main #metadata ul {
+	list-style: disc inside none;
+}
+
+main #metadata li {
+	margin-left: 1.5%;
+}
+
+@media screen and (max-width: 775px) { /* First break point */
+
+main, aside {
+	font-size: 0.8em;
+}
+
+}
+
+aside {
+	background-color: #fff;
+	padding: 1% 4% 1.5%;
+	margin: 0;
+	border-top: 1.25pt solid #f6f6f6;
+}
+
+aside .subject {
+	float: left;
+	max-width: 120px;
+	height:  200px;
+	font-size: 0.7em;
+	margin-right: 1%;
+}
+
+aside .subject img {
+	width: 120px;
+	height: 150px;
+	margin-bottom: 0;
+}
+	
+aside .subject img:hover {
+	filter: sepia; /* IE6-9 */
+	filter: sepia(0.5); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: sepia(0.5); /* Google Chrome, Safari 6+ & Opera 15+ */	
+}
+
+aside .subject p {
+	margin-top: 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 775px) { /* First break point */
+
+aside .subject {
+	float: left;
+	max-width: 100px;
+	height:  170px;
+	font-size: 0.7em;
+	margin-right: 1%;
+}
+
+aside .subject img {
+	width: 100px;
+	height: 125px;
+}
+
+}
+
+footer {
+	font-size: 0.8em;
+	text-align: center;
+	padding: 3% 2.5%;
+	margin: 0;
+}
+
+footer #university-logo {
+	max-width: 50%;
+}
+
+footer #twitter-logo {
+	max-width: 10%;
+}
+
+footer #block-shib-auth-login-box {
+	font-size: 0.5em;
+	padding: 2.5%;
+}
+
+footer #block-shib-auth-login-box a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #dedede;
+}
+
+footer #block-shib-auth-login-box a:hover {
+	color: #fff;
+}
+
+@media screen and (max-width: 555px) { /* Second break point */
+
+footer {
+	font-size: 0.7em;
+}
+
+footer #university-logo {
+	max-width: 70%;
+}
+
+footer #twitter-logo {
+	max-width: 20%;
+}
+
+
+}
