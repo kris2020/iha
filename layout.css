@@ -260,6 +260,7 @@ nav li a, nav li a.active {
 }
 
 main {
+	display: block;
 	background-color: #fff;
 	border-top: 1.25pt solid #f6f6f6;
 	padding: 1% 4% 1.5%;
